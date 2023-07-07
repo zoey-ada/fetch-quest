@@ -7,6 +7,11 @@ include_directories(
 )
 
 set(srcs
+	engine.hpp
+
+	fetchQuestLogic.hpp
+	fetchQuestLogic.cpp
+
 	main.cpp
 )
 
