@@ -17,7 +17,7 @@ protected:
 	std::shared_ptr<BaseGameLogic> createLogicAndView() override
 	{
 		auto logic = std::make_shared<FetchQuestLogic>();
-		logic->initialize();
+		logic->initialize(this->_cache);
 
 		auto view = std::make_shared<HumanView>(this->_renderer, this->_cache, this->_settings);
 		logic->addView(view);

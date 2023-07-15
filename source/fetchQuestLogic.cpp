@@ -1,6 +1,10 @@
 #include "fetchQuestLogic.hpp"
 
+#include <entities/entityFactory.hpp>
+#include <resource_cache/iResourceCache.hpp>
 #include <views/iView.hpp>
+
+#include "entities/components/movementComponent2d.hpp"
 
 FetchQuestLogic::FetchQuestLogic()
 {}
@@ -107,12 +111,12 @@ void FetchQuestLogic::onUpdate(Milliseconds delta)
 	}
 }
 
-bool FetchQuestLogic::initialize()
+bool FetchQuestLogic::initialize(std::shared_ptr<platypus::IResourceCache> cache)
 {
-	if (!BaseGameLogic::initialize())
+	if (!BaseGameLogic::initialize(cache))
 		return false;
 
-	// this->_entity_factory->registerComponent("AiComponent", createAiComponent);
+	this->_entity_factory->registerComponent("MovementComponent_2d", createMovementComponent2d);
 
 	return true;
 }

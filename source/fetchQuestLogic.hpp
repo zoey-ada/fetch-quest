@@ -2,6 +2,11 @@
 
 #include <baseGameLogic.hpp>
 
+namespace platypus
+{
+class IResourceCache;
+};
+
 class FetchQuestLogic: public BaseGameLogic
 {
 public:
@@ -10,5 +15,5 @@ public:
 
 	void onUpdate(Milliseconds delta) override;
 
-	bool initialize() override;
+	bool initialize(std::shared_ptr<platypus::IResourceCache> cache) override;
 };

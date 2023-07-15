@@ -7,6 +7,9 @@ include_directories(
 )
 
 set(srcs
+	entities/components/movementComponent2d.hpp
+	entities/components/movementComponent2d.cpp
+
 	engine.hpp
 
 	fetchQuestLogic.hpp
