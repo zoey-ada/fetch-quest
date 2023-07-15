@@ -1,0 +1,83 @@
+{
+	"render_component_2d": {
+		"vertex_shader": "assets.zip/shaders/simple_vertex.cso",
+		"pixel_shader": "assets.zip/shaders/simple_pixel.cso",
+		"texture": "assets.zip/textures/farmer.png",
+		"sprite_sheet": {
+			"viewport_size": {
+				"height": 33,
+				"width": 29
+			},
+			"animations": [
+				{
+					"action": "idle",
+					"hold_time_ms": 400,
+					"loop": true,
+					"frames": [
+						{"x": 0, "y": 0},
+						{"x": 0, "y": 0},
+						{"x": 0, "y": 0},
+						{"x": 0, "y": 0},
+						{"x": 1, "y": 2},
+						{"x": 0, "y": 0}
+					]
+				},
+				{
+					"action": "wave",
+					"hold_time_ms": 100,
+					"loop": false,
+					"frames": [
+						{"x": 0, "y": 0},
+						{"x": 1, "y": 0},
+						{"x": 2, "y": 0},
+						{"x": 0, "y": 1},
+						{"x": 1, "y": 1},
+						{"x": 2, "y": 1},
+						{"x": 0, "y": 2},
+						{"x": 2, "y": 1},
+						{"x": 1, "y": 1},
+						{"x": 2, "y": 1},
+						{"x": 2, "y": 0},
+						{"x": 1, "y": 0},
+						{"x": 0, "y": 0}
+					]
+				}
+			]
+		}
+	},
+	"transform_component_2d": {
+		"position_x": -500,
+		"position_y": 200,
+		"scale_x": 58,
+		"scale_y": 66,
+		"rotation_clockwise": 0,
+		"depth": 90
+	},
+	"physics_component": {
+		"shape_2d": {
+			"rectangle_data": {
+				"center": {
+					"x": 10.0,
+					"y": -10.0
+				},
+				"dimensions": {
+					"height": 54,
+					"width": 24
+				}
+			}
+		},
+		"max_velocity": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"friction": {
+			"x": 100.0,
+			"y": 100.0,
+			"z": 100.0
+		},
+		"mass": 0,
+		"restitution": 0,
+		"is_solid": true
+	}
+}

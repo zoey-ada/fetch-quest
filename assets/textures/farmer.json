@@ -1,0 +1,186 @@
+{ "frames": {
+   "farmer #wave 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 1.aseprite": {
+    "frame": { "x": 29, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 2.aseprite": {
+    "frame": { "x": 58, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 3.aseprite": {
+    "frame": { "x": 0, "y": 33, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 4.aseprite": {
+    "frame": { "x": 29, "y": 33, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 5.aseprite": {
+    "frame": { "x": 58, "y": 33, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 6.aseprite": {
+    "frame": { "x": 0, "y": 66, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 7.aseprite": {
+    "frame": { "x": 58, "y": 33, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 8.aseprite": {
+    "frame": { "x": 29, "y": 33, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 9.aseprite": {
+    "frame": { "x": 58, "y": 33, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 10.aseprite": {
+    "frame": { "x": 58, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #wave 11.aseprite": {
+    "frame": { "x": 29, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 1.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 2.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 3.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 4.aseprite": {
+    "frame": { "x": 29, "y": 66, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 5.aseprite": {
+    "frame": { "x": 29, "y": 66, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 6.aseprite": {
+    "frame": { "x": 29, "y": 66, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   },
+   "farmer #idle 7.aseprite": {
+    "frame": { "x": 29, "y": 66, "w": 29, "h": 33 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 29, "h": 33 },
+    "sourceSize": { "w": 29, "h": 33 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.40",
+  "image": "farmer.png",
+  "format": "RGBA8888",
+  "size": { "w": 87, "h": 99 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "wave", "from": 0, "to": 11, "direction": "forward" },
+   { "name": "idle", "from": 12, "to": 19, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "torso", "opacity": 255, "blendMode": "normal" },
+   { "name": "arms", "opacity": 255, "blendMode": "normal" },
+   { "name": "arms idle", "opacity": 255, "blendMode": "normal" },
+   { "name": "head", "opacity": 255, "blendMode": "normal" },
+   { "name": "wheat", "opacity": 255, "blendMode": "normal" },
+   { "name": "hat", "opacity": 255, "blendMode": "normal" },
+   { "name": "message box", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

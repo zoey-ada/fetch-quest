@@ -1,0 +1,111 @@
+{
+	"render_component_2d": {
+		"pixel_shader": "assets.zip/shaders/simple_pixel.cso",
+		"vertex_shader": "assets.zip/shaders/simple_vertex.cso",
+		"texture": "assets.zip/textures/blue_shirt_sprite_sheet.png",
+		"sprite_sheet": {
+			"viewport_size": {
+				"height": 33,
+				"width": 22
+			},
+			"neutral_frame": {"x": 0, "y": 2},
+			"animations": [
+				{
+					"action": "walk-down",
+					"hold_time_ms": 100,
+					"loop": false,
+					"frames": [
+						{"x":0, "y":0},
+						{"x":0, "y":1},
+						{"x":0, "y":2},
+						{"x":0, "y":3},
+						{"x":0, "y":4},
+						{"x":0, "y":2}
+					]
+				},
+				{
+					"action": "walk-up",
+					"hold_time_ms": 100,
+					"loop": false,
+					"frames": [
+						{"x":1, "y":0},
+						{"x":1, "y":1},
+						{"x":1, "y":2},
+						{"x":1, "y":3},
+						{"x":1, "y":4},
+						{"x":1, "y":2}
+					]
+				},
+				{
+					"action": "walk-right",
+					"hold_time_ms": 100,
+					"loop": false,
+					"frames": [
+						{"x":2, "y":0},
+						{"x":2, "y":1},
+						{"x":2, "y":2},
+						{"x":2, "y":3},
+						{"x":2, "y":4},
+						{"x":2, "y":2}
+					]
+				},
+				{
+					"action": "walk-left",
+					"hold_time_ms": 100,
+					"loop": false,
+					"frames": [
+						{"x":3, "y":0},
+						{"x":3, "y":1},
+						{"x":3, "y":2},
+						{"x":3, "y":3},
+						{"x":3, "y":4},
+						{"x":3, "y":2}
+					]
+				}
+			]
+		}
+	},
+	"transform_component_2d": {
+		"position_x": -250,
+		"position_y": -15,
+		"scale_x": 44,
+		"scale_y": 66,
+		"rotation_clockwise": 0,
+		"depth": 90
+	},
+	"movement_component_2d": {
+		"acceleration_x": 500.0,
+		"acceleration_y": 500.0,
+		"deceleration_x": 0.00005,
+		"deceleration_y": 0.00005,
+		"max_velocity_x": 0.004,
+		"max_velocity_y": 0.004
+	},
+	"physics_component": {
+		"shape_2d": {
+			"rectangle_data": {
+				"center": {
+					"x": 0.0,
+					"y": 0.0
+				},
+				"dimensions": {
+					"height": 33,
+					"width": 22
+				}
+			}
+		},
+		"max_velocity": {
+			"x": 40.0,
+			"y": 40.0,
+			"z": 0.0
+		},
+		"friction": {
+			"x": 100.0,
+			"y": 100.0,
+			"z": 100.0
+		},
+		"mass": 4,
+		"restitution": 1,
+		"is_solid": true
+	}
+}
