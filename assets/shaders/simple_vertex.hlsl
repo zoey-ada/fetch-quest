@@ -23,8 +23,8 @@ struct VS_INPUT
 struct VS_OUTPUT
 {
 	float4 position: SV_POSITION;
+	float3 normal: NORMAL;
 	float2 textcoord: TEXCOORD0;
-	float4 diffuse: COLOR0;
 };
 
 // logic
@@ -35,8 +35,8 @@ VS_OUTPUT main(VS_INPUT input)
 	VS_OUTPUT output;
 
 	output.position = mul(input.position, g_world_view_projection);
+	output.normal = input.normal;
 	output.textcoord = input.textcoord;
-	output.diffuse = g_diffuse_color;
 
 	return output;
 }
