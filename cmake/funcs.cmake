@@ -59,12 +59,7 @@ function(_dg_compile_hlsl_shader shader_type shader_file out_dir
 	)
 
 	set(${__out_custom_target} "generated-${shader_name}" PARENT_SCOPE)
-
-	set(${__out_compiled_shader}
-		${compiled_shader}
-
-		PARENT_SCOPE
-	)
+	set(${__out_compiled_shader} ${compiled_shader} PARENT_SCOPE)
 endfunction()
 
 function(_dg_process_texture texture_file out_dir __out_custom_target __out_processed_texture)
@@ -90,7 +85,7 @@ function(_dg_process_texture texture_file out_dir __out_custom_target __out_proc
 	)
 
 	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
-	set(${__out_processed_entity} ${processed_texture} PARENT_SCOPE)
+	set(${__out_processed_texture} ${processed_texture} PARENT_SCOPE)
 endfunction()
 
 function(_dg_process_mesh mesh_file out_dir __out_custom_target __out_processed_mesh)
@@ -116,7 +111,7 @@ function(_dg_process_mesh mesh_file out_dir __out_custom_target __out_processed_
 	)
 
 	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
-	set(${__out_processed_entity} ${processed_mesh} PARENT_SCOPE)
+	set(${__out_processed_mesh} ${processed_mesh} PARENT_SCOPE)
 endfunction()
 
 function(_dg_process_entity entity_file out_dir __out_custom_target __out_processed_entity)
@@ -193,4 +188,29 @@ function(_dg_process_sound sound_file out_dir __out_custom_target __out_processe
 
 	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
 	set(${__out_processed_sound} ${processed_sound} PARENT_SCOPE)
+endfunction()
+
+function(_zag_copy_file rel_file_path out_dir __out_custom_target __out_copied_file)
+	get_filename_component(file_name ${rel_file_path} NAME_WLE)
+	get_filename_component(file_extension ${rel_file_path} EXT)
+	string(SUBSTRING ${file_extension} 1 -1 file_extension)
+	get_filename_component(abs_file_path ${rel_file_path} ABSOLUTE)
+	set(copied_file "${out_dir}/${file_name}.${file_extension}")
+	set(target_name "copy-file-${file_name}_${file_extension}")
+
+	add_custom_command(
+		OUTPUT ${copied_file}
+		COMMENT "copying file: ${file_name}"
+
+		DEPENDS ${rel_file_path}
+
+		COMMAND cmake -E copy "${abs_file_path}" "${copied_file}"
+	)
+
+	add_custom_target("${target_name}"
+		DEPENDS ${copied_file}
+	)
+
+	set(${__out_custom_target} "${target_name}" PARENT_SCOPE)
+	set(${__out_copied_file} ${copied_file} PARENT_SCOPE)
 endfunction()
