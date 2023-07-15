@@ -1,7 +1,7 @@
 #include <platypus.hpp>
-#include <views/humanView.hpp>
 
 #include "fetchQuestLogic.hpp"
+#include "fetchQuestPlayerView.hpp"
 
 class Engine: public Platypus
 {
@@ -19,7 +19,9 @@ protected:
 		auto logic = std::make_shared<FetchQuestLogic>();
 		logic->initialize(this->_cache);
 
-		auto view = std::make_shared<HumanView>(this->_renderer, this->_cache, this->_settings);
+		auto view =
+			std::make_shared<FetchQuestPlayerView>(this->_renderer, this->_cache, this->_settings);
+		assert(view->initialize());
 		logic->addView(view);
 
 		return logic;

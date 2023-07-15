@@ -1,5 +1,6 @@
 #include "fetchQuestLogic.hpp"
 
+#include <entities/components/renderComponent2d.hpp>
 #include <entities/entityFactory.hpp>
 #include <resource_cache/iResourceCache.hpp>
 #include <views/iView.hpp>
@@ -63,6 +64,11 @@ void FetchQuestLogic::onUpdate(Milliseconds delta)
 	}
 	case GameState::Loading:
 	{
+		auto player = this->createEntity("assets.zip/entities/blue_shirt.json");
+		auto farmer = this->createEntity("assets.zip/entities/farmer.json");
+		farmer->getComponent<RenderComponent2d>("render_component_2d")
+			.lock()
+			->playAnimation("idle");
 		// this->createEntity("left_border.json");
 		// this->createEntity("right_border.json");
 		// this->createEntity("top_border.json");
