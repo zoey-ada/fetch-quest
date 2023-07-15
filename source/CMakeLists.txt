@@ -16,6 +16,7 @@ set(srcs
 )
 
 add_executable(fetch-quest WIN32 ${srcs})
+add_dependencies(fetch-quest assets)
 
 link_static(fetch-quest)
 warnings_as_errors(fetch-quest)
@@ -39,6 +40,31 @@ if(WITH_COVERAGE)
 		)
 	endif()
 endif()
+
+# -------------------------------------------------------------------------------
+# config files
+# -------------------------------------------------------------------------------
+set(config_files
+	command_list.json
+	engine_settings.json
+	input_config.json
+	physics_config.json
+)
+
+# source_group(config_files FILES ${config_files})
+
+foreach(config_file ${config_files})
+	_zag_copy_file(${config_file} ${bin_dir} custom_target copied_file)
+
+	set(copied_files ${copied_files} ${copied_file})
+	set(copy_targets ${copy_targets} ${custom_target})
+
+	set_target_properties(${custom_target} PROPERTIES FOLDER file_copies/config)
+endforeach(config_file ${config_files})
+
+add_dependencies(fetch-quest
+	${copy_targets}
+)
 
 # add_custom_command(
 # 	TARGET fetch-quest POST_BUILD
